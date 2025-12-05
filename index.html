@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Studio — Modern Clothing</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body class="dark">
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="#">STUDIO</a>
+				<nav class="nav" id="nav">
+					<a href="#shop">Shop</a>
+					<a href="#new">New Arrivals</a>
+					<a href="#about">Editorial</a>
+					<a href="#contact">Contact</a>
+				</nav>
+				<div class="header-actions">
+					<button class="icon-btn search" aria-label="Search">🔍</button>
+					<button class="icon-btn cart" aria-label="Cart">👜<span class="cart-bubble">2</span></button>
+					<button class="hamburger" id="menuToggle" aria-label="Toggle menu">☰</button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="hero-media" style="background-image: url('https://images.unsplash.com/photo-1520975917855-35dd8f59e93b?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a22c3f7b12d1d2b1f6d5a6b57f6b3fd');">
+					<div class="hero-overlay"></div>
+					<div class="container hero-content">
+						<h1 class="hero-title">Minimal. Modern. Made to Last.</h1>
+						<p class="hero-sub">Seasonless silhouettes crafted from premium materials — curated for everyday elegance.</p>
+						<div class="hero-ctas">
+							<a class="btn btn-primary" href="#shop">Shop Collection</a>
+							<a class="btn btn-ghost" href="#about">Read the Edit</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="shop" class="section container">
+				<div class="section-header">
+					<h2>Curated Picks</h2>
+					<p class="muted">Season favorites chosen by our editors.</p>
+				</div>
+				<div class="product-grid">
+					<article class="product-card reveal">
+						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8a7597a4d6f6f0d8b8c2f7d2b9c6b1e4');"></div>
+						<div class="product-info">
+							<h3>Tailored Overshirt</h3>
+							<p class="price">$168</p>
+							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Tailored%20Overshirt">Ask about this product</a>
+						</div>
+					</article>
+
+					<article class="product-card reveal">
+						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1544033524-1b2b3a2f0f1f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f6c1a8c3a6d7e4f2c1a0d3b5c7e0a6b');"></div>
+						<div class="product-info">
+							<h3>Relaxed Trousers</h3>
+							<p class="price">$128</p>
+							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Relaxed%20Trousers">Ask about this product</a>
+						</div>
+					</article>
+
+					<article class="product-card reveal">
+						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b1c6b9a7c8f0a3f7e2c1b0d5a9f8c3e');"></div>
+						<div class="product-info">
+							<h3>Boxy Knit</h3>
+							<p class="price">$98</p>
+							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Boxy%20Knit">Ask about this product</a>
+						</div>
+					</article>
+
+					<article class="product-card reveal">
+						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1520975917855-35dd8f59e93b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a22c3f7b12d1d2b1f6d5a6b57f6b3fd');"></div>
+						<div class="product-info">
+							<h3>Architectural Coat</h3>
+							<p class="price">$298</p>
+							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Architectural%20Coat">Ask about this product</a>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section id="new" class="section editorial container">
+				<div class="section-header">
+					<h2>New Arrivals — The Edit</h2>
+					<p class="muted">An editorial look at what’s just landed.</p>
+				</div>
+
+				<div class="editorial-grid">
+					<div class="editorial-large reveal" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b1a9c2e5f3b5c9f0c8d7e6a8f0b1c3d');">
+						<div class="editorial-overlay">
+							<h3>New — Mono Palette</h3>
+							<p>Timeless neutrals with fresh proportions.</p>
+						</div>
+					</div>
+
+					<div class="editorial-column">
+						<div class="editorial-item reveal" style="background-image: url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=b1c9f4a9b2c2d3e4f5a6b7c8d9e0f1a2');">
+							<div class="editorial-overlay"><span class="eyebrow">Layering</span><h4>Light Layers</h4></div>
+						</div>
+						<div class="editorial-item reveal" style="background-image: url('https://images.unsplash.com/photo-1551854838-9b3a2b8a8f5f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f6a5b4c2d1e8f9a0b7c6d5e4a3b2c1d');">
+							<div class="editorial-overlay"><span class="eyebrow">Fabric</span><h4>Summer Wool</h4></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="section container about">
+				<div class="about-inner">
+					<h2>Our Philosophy</h2>
+					<p class="muted">Design with restraint — purposeful pieces built for longevity. Our collections focus on fit, fabric, and a neutral palette that transcends seasons.</p>
+				</div>
+			</section>
+	
+			<section id="contact" class="section container contact-section">
+				<div class="section-header">
+					<h2>Contact & Product Help</h2>
+					<p class="muted">Questions about fit, fabric, or stock? Our team is here to help.</p>
+				</div>
+				<div class="contact-grid">
+					<div class="contact-card">
+						<h3>Customer Service</h3>
+						<p class="muted">Help with orders, sizing, and product details.</p>
+						<p><a href="mailto:support@studio.com">support@studio.com</a></p>
+						<p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+						<p class="muted">Mon–Fri, 9am–6pm ET</p>
+					</div>
+
+					<div class="contact-card">
+						<h3>Wholesale & Press</h3>
+						<p class="muted">Partnerships, stockists, and editorial requests.</p>
+						<p><a href="mailto:wholesale@studio.com">wholesale@studio.com</a></p>
+					</div>
+
+					<div class="contact-card">
+						<h3>Returns & Shipping</h3>
+						<p class="muted">Questions about returns, exchanges, or shipping timelines.</p>
+						<p><a href="#">Returns Policy</a> · <a href="#">Shipping Info</a></p>
+						<button class="btn btn-ghost" id="chatBtn">Start Live Chat</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<div>
+					<strong>Studio</strong>
+					<p class="muted">© Studio 2025</p>
+				</div>
+				<nav class="footer-nav muted">
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+					<a href="#">Careers</a>
+				</nav>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
