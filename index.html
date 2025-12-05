@@ -1,168 +1,366 @@
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Studio — Modern Clothing</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body class="dark">
-		<header class="site-header">
-			<div class="container header-inner">
-				<a class="brand" href="#">STUDIO</a>
-				<nav class="nav" id="nav">
-					<a href="#shop">Shop</a>
-					<a href="#new">New Arrivals</a>
-					<a href="#about">Editorial</a>
-					<a href="#contact">Contact</a>
-				</nav>
-				<div class="header-actions">
-					<button class="icon-btn search" aria-label="Search">🔍</button>
-					<button class="icon-btn cart" aria-label="Cart">👜<span class="cart-bubble">2</span></button>
-					<button class="hamburger" id="menuToggle" aria-label="Toggle menu">☰</button>
-				</div>
-			</div>
-		</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D&amp;A Co — Mindful Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="eco-styles.css">
+  </head>
+  <body class="dark">
+    <div class="atmosphere" aria-hidden="true"></div>
+    <header class="eco-header">
+      <div class="eco-container header-row">
+        <a class="eco-brand" href="#">D&amp;A Co</a>
+        <nav class="eco-nav" id="ecoNav">
+          <a href="#categories">Categories</a>
+          <a href="#story">Our Story</a>
+          <a href="#community">Community</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="eco-actions">
+          <button class="icon-btn" id="ecoMenu">☰</button>
+        </div>
+      </div>
+    </header>
 
-		<main>
-			<section class="hero">
-				<div class="hero-media" style="background-image: url('https://images.unsplash.com/photo-1520975917855-35dd8f59e93b?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a22c3f7b12d1d2b1f6d5a6b57f6b3fd');">
-					<div class="hero-overlay"></div>
-					<div class="container hero-content">
-						<h1 class="hero-title">Minimal. Modern. Made to Last.</h1>
-						<p class="hero-sub">Seasonless silhouettes crafted from premium materials — curated for everyday elegance.</p>
-						<div class="hero-ctas">
-							<a class="btn btn-primary" href="#shop">Shop Collection</a>
-							<a class="btn btn-ghost" href="#about">Read the Edit</a>
-						</div>
-					</div>
-				</div>
-			</section>
+    <main>
+      <section class="eco-hero">
+        <div class="eco-hero-inner eco-container">
+          <div class="hero-media">
+            <video class="hero-video" autoplay muted loop playsinline src="images/why we choose better.mp4"></video>
+          </div>
+          <div class="hero-copy">
+            <h1>Mindful Goods, Naturally Made</h1>
+            <p class="lead">Curated sustainable clothing, home, and wellness essentials crafted to last — gentle on the planet, kind to your life.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#categories">Shop Sustainable Picks</a>
+              <a class="btn ghost" href="#story">Read Our Practices</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section id="shop" class="section container">
-				<div class="section-header">
-					<h2>Curated Picks</h2>
-					<p class="muted">Season favorites chosen by our editors.</p>
-				</div>
-				<div class="product-grid">
-					<article class="product-card reveal">
-						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8a7597a4d6f6f0d8b8c2f7d2b9c6b1e4');"></div>
-						<div class="product-info">
-							<h3>Tailored Overshirt</h3>
-							<p class="price">$168</p>
-							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Tailored%20Overshirt">Ask about this product</a>
-						</div>
-					</article>
+      <section id="categories" class="section eco-container categories">
+        <div class="section-header">
+          <h2>Shop by Category</h2>
+          <p class="muted">Thoughtful products across clothing, home, beauty, and more — all with transparent sourcing.</p>
+        </div>
 
-					<article class="product-card reveal">
-						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1544033524-1b2b3a2f0f1f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f6c1a8c3a6d7e4f2c1a0d3b5c7e0a6b');"></div>
-						<div class="product-info">
-							<h3>Relaxed Trousers</h3>
-							<p class="price">$128</p>
-							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Relaxed%20Trousers">Ask about this product</a>
-						</div>
-					</article>
+        <div class="category-grid">
+          <a class="cat-card" href="#" data-cat="clothing" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C10 6 6 7 4 9s1 6 4 8 7 0 8-3-1-6-4-12z"/></svg>
+            <h3>Sustainable Clothing</h3>
+            <p class="muted">Seasonless wardrobe staples.</p>
+          </a>
 
-					<article class="product-card reveal">
-						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b1c6b9a7c8f0a3f7e2c1b0d5a9f8c3e');"></div>
-						<div class="product-info">
-							<h3>Boxy Knit</h3>
-							<p class="price">$98</p>
-							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Boxy%20Knit">Ask about this product</a>
-						</div>
-					</article>
+          <a class="cat-card" href="#" data-cat="footwear" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3 6 6 .5-4.5 3 1.5 6L12 15l-6 3 1.5-6L3 8.5 9 8z"/></svg>
+            <h3>Footwear</h3>
+            <p class="muted">Low-impact soles & recycled materials.</p>
+          </a>
 
-					<article class="product-card reveal">
-						<div class="product-media" style="background-image: url('https://images.unsplash.com/photo-1520975917855-35dd8f59e93b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a22c3f7b12d1d2b1f6d5a6b57f6b3fd');"></div>
-						<div class="product-info">
-							<h3>Architectural Coat</h3>
-							<p class="price">$298</p>
-							<a class="product-contact" href="mailto:support@studio.com?subject=Inquiry%20about%20Architectural%20Coat">Ask about this product</a>
-						</div>
-					</article>
-				</div>
-			</section>
+          <a class="cat-card" href="#" data-cat="skincare" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a4 4 0 0 1 4 4v4a4 4 0 1 1-8 0V6a4 4 0 0 1 4-4z"/></svg>
+            <h3>Skincare & Beauty</h3>
+            <p class="muted">Clean, cruelty-free essentials.</p>
+          </a>
 
-			<section id="new" class="section editorial container">
-				<div class="section-header">
-					<h2>New Arrivals — The Edit</h2>
-					<p class="muted">An editorial look at what’s just landed.</p>
-				</div>
+          <a class="cat-card" href="#" data-cat="homedecor" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v2H4zM4 10h16v10H4z"/></svg>
+            <h3>Home Décor</h3>
+            <p class="muted">Natural fibers & artisan pieces.</p>
+          </a>
 
-				<div class="editorial-grid">
-					<div class="editorial-large reveal" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b1a9c2e5f3b5c9f0c8d7e6a8f0b1c3d');">
-						<div class="editorial-overlay">
-							<h3>New — Mono Palette</h3>
-							<p>Timeless neutrals with fresh proportions.</p>
-						</div>
-					</div>
+          <a class="cat-card" href="#" data-cat="accessories" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.5 4.5L18 8l-3 2.5L16 16l-4-2-4 2 1-5.5L6 8l4.5-1.5z"/></svg>
+            <h3>Accessories</h3>
+            <p class="muted">Timeless extras, ethically made.</p>
+          </a>
 
-					<div class="editorial-column">
-						<div class="editorial-item reveal" style="background-image: url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=b1c9f4a9b2c2d3e4f5a6b7c8d9e0f1a2');">
-							<div class="editorial-overlay"><span class="eyebrow">Layering</span><h4>Light Layers</h4></div>
-						</div>
-						<div class="editorial-item reveal" style="background-image: url('https://images.unsplash.com/photo-1551854838-9b3a2b8a8f5f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f6a5b4c2d1e8f9a0b7c6d5e4a3b2c1d');">
-							<div class="editorial-overlay"><span class="eyebrow">Fabric</span><h4>Summer Wool</h4></div>
-						</div>
-					</div>
-				</div>
-			</section>
+          <a class="cat-card" href="#" data-cat="wellness" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/></svg>
+            <h3>Wellness & Home</h3>
+            <p class="muted">Rituals for everyday wellbeing.</p>
+          </a>
 
-			<section id="about" class="section container about">
-				<div class="about-inner">
-					<h2>Our Philosophy</h2>
-					<p class="muted">Design with restraint — purposeful pieces built for longevity. Our collections focus on fit, fabric, and a neutral palette that transcends seasons.</p>
-				</div>
-			</section>
-	
-			<section id="contact" class="section container contact-section">
-				<div class="section-header">
-					<h2>Contact & Product Help</h2>
-					<p class="muted">Questions about fit, fabric, or stock? Our team is here to help.</p>
-				</div>
-				<div class="contact-grid">
-					<div class="contact-card">
-						<h3>Customer Service</h3>
-						<p class="muted">Help with orders, sizing, and product details.</p>
-						<p><a href="mailto:support@studio.com">support@studio.com</a></p>
-						<p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-						<p class="muted">Mon–Fri, 9am–6pm ET</p>
-					</div>
+          <a class="cat-card" href="#" data-cat="tech" role="button">
+            <svg class="cat-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+            <h3>Small Tech & Lifestyle</h3>
+            <p class="muted">Low-waste gadgets & clever design.</p>
+          </a>
+        </div>
 
-					<div class="contact-card">
-						<h3>Wholesale & Press</h3>
-						<p class="muted">Partnerships, stockists, and editorial requests.</p>
-						<p><a href="mailto:wholesale@studio.com">wholesale@studio.com</a></p>
-					</div>
+        <!-- Expandable clothing panel (hidden by default) -->
+        <div id="clothing-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Clothing — More Options</h3>
+              <button id="closeClothing" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/organic linen shirt.jpg');"></div>
+                <div class="product-body"><h4>Organic Linen Shirt</h4><p class="muted">$98</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/recycled polyester jacket.jpg');"></div>
+                <div class="product-body"><h4>Recycled Polyester Jacket</h4><p class="muted">$158</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/hemp trousers.jpg');"></div>
+                <div class="product-body"><h4>Hemp Trousers</h4><p class="muted">$128</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/organic cotton tee.jpg');"></div>
+                <div class="product-body"><h4>Organic Cotton Tee</h4><p class="muted">$48</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
 
-					<div class="contact-card">
-						<h3>Returns & Shipping</h3>
-						<p class="muted">Questions about returns, exchanges, or shipping timelines.</p>
-						<p><a href="#">Returns Policy</a> · <a href="#">Shipping Info</a></p>
-						<button class="btn btn-ghost" id="chatBtn">Start Live Chat</button>
-					</div>
-				</div>
-			</section>
+        <!-- Expandable footwear panel (hidden by default) -->
+        <div id="footwear-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Footwear — More Options</h3>
+              <button id="closeFootwear" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/recycled runner.jpg');"></div>
+                <div class="product-body"><h4>Recycled Runner</h4><p class="muted">$128</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/vegan slip-on.jpg');"></div>
+                <div class="product-body"><h4>Vegan Slip-On</h4><p class="muted">$98</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/upcycled sandal.jpg');"></div>
+                <div class="product-body"><h4>Upcycled Sandal</h4><p class="muted">$78</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/all-weather boot.jpg');"></div>
+                <div class="product-body"><h4>All-Weather Boot</h4><p class="muted">$188</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
 
-		</main>
+        <!-- Expandable skincare panel (hidden by default) -->
+        <div id="skincare-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Skincare & Beauty — More Options</h3>
+              <button id="closeSkincare" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/botanical cleanser.jpg');"></div>
+                <div class="product-body"><h4>Botanical Cleanser</h4><p class="muted">$28</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/herbal toner.jpg');"></div>
+                <div class="product-body"><h4>Herbal Toner</h4><p class="muted">$24</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/restorative facial oil.jpg');"></div>
+                <div class="product-body"><h4>Restorative Facial Oil</h4><p class="muted">$42</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/daily mineral SPF.jpg');"></div>
+                <div class="product-body"><h4>Daily Mineral SPF</h4><p class="muted">$36</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
 
-		<footer class="site-footer">
-			<div class="container footer-inner">
-				<div>
-					<strong>Studio</strong>
-					<p class="muted">© Studio 2025</p>
-				</div>
-				<nav class="footer-nav muted">
-					<a href="#">Privacy</a>
-					<a href="#">Terms</a>
-					<a href="#">Careers</a>
-				</nav>
-			</div>
-		</footer>
+        <!-- Expandable home decor panel (hidden by default) -->
+        <div id="homedecor-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Home Décor — More Options</h3>
+              <button id="closeHomeDecor" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Handwoven Throw.jpg');"></div>
+                <div class="product-body"><h4>Handwoven Throw</h4><p class="muted">$88</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Ceramic Vase.jpg');"></div>
+                <div class="product-body"><h4>Ceramic Vase</h4><p class="muted">$64</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Reclaimed Wood Tray.jpg');"></div>
+                <div class="product-body"><h4>Reclaimed Wood Tray</h4><p class="muted">$74</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Organic Cotton Cushion.jpg');"></div>
+                <div class="product-body"><h4>Organic Cotton Cushion</h4><p class="muted">$42</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
 
-		<script src="script.js"></script>
-	</body>
+        <!-- Expandable accessories panel (hidden by default) -->
+        <div id="accessories-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Accessories — More Options</h3>
+              <button id="closeAccessories" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Minimal Leather Wallet.jpg');"></div>
+                <div class="product-body"><h4>Minimal Leather Wallet</h4><p class="muted">$48</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Recycled Tote.jpg');"></div>
+                <div class="product-body"><h4>Recycled Tote</h4><p class="muted">$38</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Handmade Keychain.jpg');"></div>
+                <div class="product-body"><h4>Handmade Keychain</h4><p class="muted">$12</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Organic Cotton Scarf.jpg');"></div>
+                <div class="product-body"><h4>Organic Cotton Scarf</h4><p class="muted">$34</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expandable wellness panel (hidden by default) -->
+        <div id="wellness-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Wellness & Home — More Options</h3>
+              <button id="closeWellness" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Aromatic Candle.jpg');"></div>
+                <div class="product-body"><h4>Aromatic Candle</h4><p class="muted">$26</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Herbal Tea Set.jpg');"></div>
+                <div class="product-body"><h4>Herbal Tea Set</h4><p class="muted">$22</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/wool throw pillow.jpg');"></div>
+                <div class="product-body"><h4>Wool Throw Pillow</h4><p class="muted">$48</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Wellness Kit.jpg');"></div>
+                <div class="product-body"><h4>Wellness Kit</h4><p class="muted">$64</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expandable tech panel (hidden by default) -->
+        <div id="tech-panel" class="cat-panel" aria-hidden="true">
+          <div class="panel-inner eco-container">
+            <div class="panel-header">
+              <h3>Small Tech & Lifestyle — More Options</h3>
+              <button id="closeTech" class="btn ghost">Close</button>
+            </div>
+            <div class="panel-grid">
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Solar Charger.jpg');"></div>
+                <div class="product-body"><h4>Solar Charger</h4><p class="muted">$54</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Reusable Cable Kit.jpg');"></div>
+                <div class="product-body"><h4>Reusable Cable Kit</h4><p class="muted">$18</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Wooden Wireless Stand.jpg');"></div>
+                <div class="product-body"><h4>Wooden Wireless Stand</h4><p class="muted">$72</p></div>
+              </article>
+              <article class="product-card">
+                <div class="product-thumb" style="background-image:url('images/Compact Air Purifier.jpg');"></div>
+                <div class="product-body"><h4>Compact Air Purifier</h4><p class="muted">$88</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section eco-container story">
+        <div class="story-inner">
+          <div class="story-media"></div>
+          <div class="story-copy">
+            <h2>Why We Choose Better</h2>
+            <p class="muted lead">From responsible fibers to transparent supply chains — we partner with makers who share our values. Our editorial explores behind-the-scenes sourcing, circular design, and how small choices create big impact.</p>
+            <a class="btn ghost" href="#">Read the Full Story</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="section eco-container community">
+        <div class="section-header">
+          <h2>Community & Giveback</h2>
+          <p class="muted">We support planting initiatives and local artisans — discover events and ways to get involved.</p>
+        </div>
+        <div class="community-grid">
+          <article class="comm-card">
+            <h4>Plant a Tree</h4>
+            <p class="muted">Every order supports reforestation partners.</p>
+          </article>
+          <article class="comm-card">
+            <h4>Workshops</h4>
+            <p class="muted">Monthly maker sessions and repair cafes.</p>
+          </article>
+          <article class="comm-card">
+            <h4>Local Partnerships</h4>
+            <p class="muted">Learn about our artisan partners.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section eco-container contact">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p class="muted">Questions about materials, sizing, or wholesale? We’re here to help.</p>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3>Customer Care</h3>
+            <p class="muted">d.adesigns555@gmail.com</p>
+            <p class="muted">+91 701 708-9358</p>
+          </div>
+          <div class="contact-card">
+            <h3>Wholesale</h3>
+            <p class="muted">wholesale@dandacore.com</p>
+          </div>
+          <div class="contact-card">
+            <h3>Press</h3>
+            <p class="muted">press@dandacore.com</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="eco-footer">
+      <div class="eco-container footer-row">
+        <div class="footer-left">
+          <strong>D&amp;A Co</strong>
+          <p class="muted">Curated with care • © 2025</p>
+        </div>
+        <nav class="footer-links muted">
+          <a href="#">Sustainability</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="eco-script.js"></script>
+  </body>
 </html>
